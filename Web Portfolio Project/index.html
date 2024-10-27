@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Syafii</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- Custom & Animation CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+  <!-- navigasi -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        Syafi'i<span class="brand-dot">.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+        <span class="toggler-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#layanan">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portofolio">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#staff">Partner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- banner -->
+  
+  <section class="banner">
+    <!-- Three.js Canvas -->
+    <canvas id="threejs-canvas"></canvas>
+    
+    <div class="container position-relative">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-10">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+              <div class="banner-image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <img src="assets/images/banner/syafbanner.jpg" class="img-fluid cepi-banner" alt="Muhammad Syafi'i Nurullah" />
+                <div class="banner-shape"></div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-start order-lg-1">
+              <div class="banner-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="banner-title">Muhammad Syafi'i Nurullah</h1>
+                <p class="banner-subtitle">Web Developer | IoT Specialist | Content Writer</p>
+                <div class="banner-cta">
+                  <a href="#client" class="btn btn-primary">Learn More</a>
+                  <a href="mailto:akunsyafii4@gmail.com" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="banner-social">
+                  <a href="https://www.instagram.com/bysyafiii/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/muhammad-syafii-nurullah/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <!-- Client -->
+   <section id="client" class="client-section">
+    <div class="container">
+      <h2 class="text-center" data-aos="fade-up">Dipercaya Oleh</h2>
+      <div class="client-slider" data-aos="fade-up" data-aos-delay="200">
+        <div class="client-grid">
+          <div class="client-item">
+            <img src="assets/images/clients/Logo Labschool.png" alt="Labschool" class="client-logo">
+            <div class="client-overlay">
+              <span>Labschool</span>
+            </div>
+          </div>
+          <div class="client-item">
+            <img src="assets/images/clients/Lifedia.png" alt="Lifedia" class="client-logo"Y>
+            <div class="client-overlay">
+              <span>Lifedia</span>
+            </div>
+          </div>
+          <div class="client-item">
+            <img src="assets/images/clients/LOGODT.png" alt="Dewatiket" class="client-logo">
+            <div class="client-overlay">
+              <span>Dewatiket</span>
+            </div>
+          </div>
+          <div class="client-item">
+            <img src="assets/images/clients/MD Organic.png" alt="MD Organic" class="client-logo">
+            <div class="client-overlay">
+              <span>MD Organic</span>
+            </div>
+          </div>
+          <div class="client-item">
+            <img src="assets/images/clients/Satu Indonesia Awards.png" alt="Satu Indonesia Awards" class="client-logo">
+            <div class="client-overlay">
+              <span>Satu Indonesia Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- tentang -->
+
+   <section id="tentang" class="tentang">
+    <div class="container">
+      <h2 class="text-center animate__animated animate__fadeInUp animate__delay-0.7s">Tentang</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assets/images/about/cepi.png" class="cepi img-fluid" alt="Muhammad Syafi'i Nurullah" 
+               data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" />
+        </div>
+        <div class="col-md-6">
+          <p data-aos="fade-right" data-aos-duration="700" data-aos-delay="400">
+            Halo, saya Muhammad Syafi'i Nurullah, seorang pengembang web yang juga memiliki keahlian di bidang IoT dan penulisan konten. Saya sangat antusias dalam mengerjakan proyek yang menggabungkan teknologi dan kreativitas.
+          </p>
+          <p data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+            Berpengalaman dalam menggunakan HTML, CSS, Bootstrap, hingga Three.js untuk pembuatan website yang interaktif. Selain itu, saya juga ahli dalam mengembangkan proyek IoT menggunakan Arduino dan ESP32, serta memiliki pengalaman menulis untuk kebutuhan akademik maupun konten marketing.
+          </p>
+          <p data-aos="fade-right" data-aos-duration="700" data-aos-delay="600">
+            Saya selalu bersemangat untuk belajar hal baru dan berinovasi dalam setiap proyek yang saya kerjakan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- layanan -->
+    <section id="layanan" class="layanan">
+      <div class="container">
+        <h2 class="text-center animate__animated animate__fadeInUp animate__delay-0.7s">Layanan</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="lingkaran">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Programming</h3>
+              <p>Pengembangan website modern menggunakan HTML & CSS, Bootstrap Framework, dan Three.js untuk menciptakan pengalaman web yang interaktif.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="lingkaran">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h3>IoT</h3>
+              <p>Spesialisasi dalam pengembangan solusi IoT menggunakan Arduino dan ESP32 untuk menciptakan sistem otomasi yang inovatif.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="lingkaran">
+                <i class="fas fa-pen"></i>
+              </div>
+              <h3>Writing</h3>
+              <p>Layanan penulisan profesional mencakup Essai, Penulisan Akademik, dan Content Marketing yang berkualitas tinggi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- portofolio -->
+   <section id="portofolio" class="portofolio">
+    <div class="container">
+      <h2 class="text-center animate__animated animate__fadeInUp animate__delay-0.7s">Portofolio</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="card">
+            <img src="assets/images/portfolio/Lifedia.jpg" class="card-img-top" alt="Lifedia" />
+            <div class="card-body">
+              <h5 class="card-title">Lifedia</h5>
+              <p class="card-text">Pengembangan website Lifedia menggunakan HTML, CSS, dan framework bootstrap.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+          <div class="card">
+            <img src="assets/images/portfolio/vendingmachine.jpg" class="card-img-top" alt="DIY Vending Machine" />
+            <div class="card-body">
+              <h5 class="card-title">DIY Vending Machine</h5>
+              <p class="card-text">Pembuatan DIY Vending Machine sederhana menggunakan Arduino UNO dan motor servo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+          <div class="card">
+            <img src="assets/images/portfolio/writing.png" class="card-img-top" alt="Blog Dewatiket" />
+            <div class="card-body">
+              <h5 class="card-title">Blog Dewatiket</h5>
+              <p class="card-text">Pengembangan konten Blog Dewatiket untuk keperluan marketing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  
+  <!-- tim -->
+   <section id="staff" class="timsec pt-5 pb-5">
+    <div class="container">
+      <h2 class="text-center animate__animated animate__fadeInUp animate__delay-0.7s">Partner</h2>
+      <div class="row justify-content-center pt-4 gx-4 gy-4">
+        <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+          <div class="team-member">
+            <div class="member-img">
+              <img src="assets/images/team/rijal.png" class="img-fluid" alt="Afrizal Adi Nugroho">
+              <div class="social">
+                <a href="https://www.instagram.com/afrizaladin/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/afrizaladinugroho33/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Afrizal Adi Nugroho</h4>
+              <span>Web Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="team-member">
+            <div class="member-img">
+              <img src="assets/images/team/far.png" class="img-fluid" alt="Farhan Ramadhan Khoir">
+              <div class="social">
+                <a href="https://www.instagram.com/farhann.rk/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/farhanramadhank/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Farhan Ramadhan Khoir</h4>
+              <span>IoT Engineer</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+          <div class="team-member">
+            <div class="member-img">
+              <img src="assets/images/team/isan.png" class="img-fluid" alt="Ikhsan Fauzan Aziim">
+              <div class="social">
+                <a href="https://www.instagram.com/ikhsanfauzan28/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ikhsanfauzan/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Ikhsan Fauzan Aziim</h4>
+              <span>IoT Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- kontak -->
+  <section id="kontak" class="kontak-section">
+    <div class="container">
+      <h2 class="text-center">Hubungi Saya</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form class="kontak-form" data-aos="fade-up">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nama" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Subjek" required>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="5" placeholder="Pesan" required></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg px-5">Kirim Pesan</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container text-center p-3">&copy; Muhammad Syafi'i Nurullah | All Rights Reserved</div>
+  
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+    // Back to Top functionality
+    const backToTopButton = document.getElementById('backToTop');
+    
+    const toggleBackToTop = () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
+    };
+    
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+    
+    // Event listeners
+    window.addEventListener('scroll', toggleBackToTop);
+    backToTopButton.addEventListener('click', scrollToTop);
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+  
+  <!-- Sebelum closing body tag -->
+  <script src="assets/js/banner-animation.js"></script>
+</body>
+
+</html>
