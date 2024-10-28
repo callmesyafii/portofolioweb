@@ -277,6 +277,7 @@ section:not(.client-section) {
   margin-bottom: 1rem;
   line-height: 1.2;
   background: linear-gradient(45deg, #333, #999966);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
